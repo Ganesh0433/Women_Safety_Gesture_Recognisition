@@ -4,6 +4,6 @@ mediapipe==0.10.20
 pyrebase==3.0.27
 gcloud==0.17.0  # Match the version required by pyrebase
 pillow==9.5.0
-pycryptodome==3.17
+pycryptodome==3.4.3  # Match the version required by pyrebase
 oauth2client==3.0.0
 jws==0.1.3
