@@ -1,7 +1,6 @@
 streamlit
-opencv-python
+opencv-python-headless
 mediapipe
 pyrebase4
-numpy
-pillow
+threading
 python-dotenv
