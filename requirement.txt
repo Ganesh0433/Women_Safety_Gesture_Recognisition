@@ -1,0 +1,7 @@
+streamlit
+opencv-python
+mediapipe
+pyrebase4
+numpy
+pillow
+python-dotenv
