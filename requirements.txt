@@ -3,3 +3,9 @@ opencv-python-headless
 mediapipe
 pyrebase4==4.4.0  # Downgraded to a compatible version
 python-dotenv
+
+# Add system dependencies
+libsdl2-dev
+libxi-dev
+libgdal-dev
+libgl1-mesa-glx
