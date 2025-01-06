@@ -1,6 +1,5 @@
 streamlit
 opencv-python-headless
 mediapipe
-pyrebase4
-threading
+pyrebase4==4.4.0  # Downgraded to a compatible version
 python-dotenv
