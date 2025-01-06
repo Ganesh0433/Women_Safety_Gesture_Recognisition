@@ -1,10 +1,9 @@
-opencv-python-headless
-mediapipe
-python-dotenv==0.21.0
+streamlit==1.41.1
+opencv-python-headless==4.7.0.72
+mediapipe==0.10.20
 pyrebase==3.0.27
-gcloud 
-streamlit
+gcloud==0.18.3
 pillow==9.5.0
 pycryptodome==3.17
-oauth2client==4.1.3
+oauth2client==3.0.0  # Match the version required by pyrebase
 jws==0.1.3
