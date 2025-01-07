@@ -8,6 +8,16 @@ import threading
 
 from dotenv import load_dotenv
 load_dotenv()
+
+firebaseConfig = {
+    "apiKey": st.secrets["firebase"]["FIREBASE_API_KEY"],
+    "authDomain": st.secrets["firebase"]["FIREBASE_AUTH_DOMAIN"],
+    "projectId": st.secrets["firebase"]["FIREBASE_PROJECT_ID"],
+    "storageBucket": st.secrets["firebase"]["FIREBASE_STORAGE_BUCKET"],
+    "messagingSenderId": st.secrets["firebase"]["FIREBASE_MESSAGING_SENDER_ID"],
+    "appId": st.secrets["firebase"]["FIREBASE_APP_ID"],
+    "databaseURL": st.secrets["firebase"]["FIREBASE_DATABASE_URL"]
+}
 # Initialize global variables
 lat, long = 22.294858, 73.362279
 hand_gestures = {}
@@ -18,15 +28,7 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False, max_num_hands=10, min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 # Firebase configuration
-firebaseConfig = {
-    "apiKey": os.getenv("FIREBASE_API_KEY"),
-    "authDomain": os.getenv("FIREBASE_AUTH_DOMAIN"),
-    "projectId": os.getenv("FIREBASE_PROJECT_ID"),
-    "storageBucket": os.getenv("FIREBASE_STORAGE_BUCKET"),
-    "messagingSenderId": os.getenv("FIREBASE_MESSAGING_SENDER_ID"),
-    "appId": os.getenv("FIREBASE_APP_ID"),
-    "databaseURL": os.getenv("FIREBASE_DATABASE_URL")
-}
+
 
 firebase = pyrebase.initialize_app(firebaseConfig)
 storage = firebase.storage()

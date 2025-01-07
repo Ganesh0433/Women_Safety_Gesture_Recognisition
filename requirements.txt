@@ -1,6 +1,6 @@
 streamlit
-opencv-python-headless
+opencv-python
 mediapipe
-pyrebase4
-threading
 python-dotenv
+pyrebase4
+setuptools
