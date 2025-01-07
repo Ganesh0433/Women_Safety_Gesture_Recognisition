@@ -1,2 +1,3 @@
 # Women_Safety_Gesture_Recognisition
-![Screenshot (17)](https://github.com/user-attachments/assets/3e620cfc-ed86-4d97-80a1-c356081cfbbf)
+
+![Screenshot 2025-01-07 140737](https://github.com/user-attachments/assets/4bbc3b68-b1a7-4ef7-970d-bfa30a0abd46)
