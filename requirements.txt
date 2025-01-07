@@ -3,4 +3,5 @@ opencv-python
 mediapipe
 python-dotenv
 pyrebase4
+setuptools
 
